@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  .header(ng-init="url='http://bing.com'")
+    input(style="width: 100%" ng-model="url")
+  .content
+    iframe(style="width: 100%" ng-src="{{trustSrc(url)}}" src="about:blank")

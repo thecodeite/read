@@ -1,8 +1,11 @@
-docktype html
-body
+doctype html
+html(ng-app="readApp" ng-controller="MainCtrl")
   head
-    title error
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="/bower/angularjs/angular.js")
+    script(src="/app/read-app.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-sanitize.min.js")
   body
     block content
-  
-  
+

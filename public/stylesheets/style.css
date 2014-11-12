@@ -1,8 +1,36 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
 a {
   color: #00B7FF;
+}
+
+*
+{
+    margin:0;padding:0;    
+}
+html,body
+{
+    height:100%;
+    width:100%;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: table;
+}
+
+
+div
+{
+    width: 100%;
+    background: yellow;
+    display:table-row;
+
+}
+div+ div
+{
+    background: pink;
+    height:100%;  
+}
+iframe {
+  height: 100%;
 }
